@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta charset='UTF-8'>
+<link href='style.css' rel='stylesheet' type='text/css'>
+<title>Easy — secure chat from your terminal</title>
+<meta content='Easy — secure chat from your terminal' name='title'>
+<meta content='Easy — secure chat from your terminal' name='apple-mobile-web-app-title'>
+<meta content='Easy' name='application-name'>
+<meta content='Easy — secure chat from your terminal' name='twitter:title'>
+<meta content='Easy — secure chat from your terminal' name='og:title'>
+<meta content='summary' name='twitter:card'>
+<meta content='Secure, end-to-end encrypted chat sessions from your terminal. Easy makes communicating privately and securely with others, well, easy.' name='description'>
+<meta content='Secure, end-to-end encrypted chat sessions from your terminal. Easy makes communicating privately and securely with others, well, easy.' name='twitter:description'>
+<meta content='Secure, end-to-end encrypted chat sessions from your terminal. Easy makes communicating privately and securely with others, well, easy.' name='og:description'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link href='public/favicons/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'>
+<link href='public/favicons/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
+<link href='public/favicons/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
+<link href='public/favicons/manifest.json' rel='manifest'>
+<link color='#5bbad5' href='public/favicons/safari-pinned-tab.svg' rel='mask-icon'>
+<meta content='#ffffff' name='theme-color'>
+</head>
+<body>
+<h1>Easy</h1>
+<h2>Secure, end-to-end encrypted chat from your terminal.</h2>
+</body>
+<div style='margin-top: 30px;'>
+<p>
+Download using
+<a href='https://npmjs.com' target='_blank'>npm:</a>
+</p>
+<code>npm install easy</code>
+<p>
+Then type
+<code style='display: inline-block;'>easy</code>
+.
+</p>
+<hr>
+<h2>Secured and Encrypted.</h2>
+<ul class='features mt-40'>
+<li>
+<div class='content'>
+<em>
+<div class='check'>✓</div>
+<div class='title'>End-to-end encryption</div>
+</em>
+<p class='desc'>
+End-to-end encryption means messages are encrypted before they leave your device using a secret key.
+Even if someone is monitoring your network, or someone hacks our relay server, they would be unable to decipher your messages.
+</p>
+</div>
+</li>
+<li>
+<div class='contnet'>
+<em>
+<div class='check'>✓</div>
+<div class='title'>Encrypted during transmission</div>
+</em>
+<p class='desc'>
+Easy uses encrypted websockets (TLS) to establish a secure connection between participants, and encrypts your messages once more during transmission.
+</p>
+</div>
+</li>
+<li>
+<div class='content'>
+<em>
+<div class='check'>✓</div>
+<div class='title'>No message storage</div>
+</em>
+<p class='desc'>
+Easy messages are only routed in real-time to the recipient, and never stored or saved in a database. Once a message has been delivered, there's no record of that message ever being sent.
+Conversations on Easy mimick real life conversations: if you're not there when they said it, they'll have to repeat it once you get there.
+</p>
+</div>
+</li>
+</ul>
+<hr>
+<h2>What's Easy?</h2>
+<p class='mt-40'>
+<strong>Easy makes it easy to create a 1-on-1 secure chat room using your Terminal.</strong>
+</p>
+<p>Easy does away with the complexities of modern day secure chatting applications:</p>
+<ul>
+<li>
+It has no remote message storage system, which means a message vanishes without a trace after it's delivered.
+</li>
+<li>
+Encryption keys are set per-room, which means Easy doesn't have to deal with the usual complexity of issuing, managing, and securing keys. Instead, keys are communicated via a secure means of your choosing (in person, secure phone, password hint).
+</li>
+<li>
+Easy uses high-entropy encryption "sentences" to encrypt messages. Instead of using random strings, you'll use easy-to-remember but impossible-to-guess passphrases like "the quick yellow dog jumped in the cold blue water".
+</li>
+<li>
+Easy doesn't have a complicated UI that slows down messaging and communication.
+</li>
+</ul>
+<hr>
+<h2>Advanced Usage</h2>
+<p>To begin using Easy, just type <code>easy</code> after you've installed it. That should be all you need. The following custom options are available:</p>
+<p>
+<strong>Launch Arguments</strong>
+</p>
+<ul>
+<li><code>e</code> or <code>email</code>: sign in with a different email than the one saved. Example: <code>easy e=hello@standardnotes.org</code></li>
+<li><code>logout</code>: ends login session</li>
+</ul>
+<p>
+<strong>Chat Commands</strong>
+When you're in a chat room, you can use these commands:
+</p>
+<ul>
+<li><code>:set-secret</code>: change the room encryption key</li>
+<li><code>:show-secret</code>: show the room encryption key</li>
+<li><code>:server</code>: print the address of the server you're connected to</li>
+</ul>
+<p class='mt-40'>
+<strong>Using Your Own Server</strong>
+<p>
+By default, Easy uses the secure server avaialble at https://api.easy.gd for both user authentication and websocket broadcoasting.
+To use your own server, set the following environment variables before launching Easy:
+</p>
+</p>
+<ul>
+<li><code>EASY_SERVER</code>: Authentication server address.</li>
+<li><code>EASY_SOCKET</code>: Socket server address.</li>
+</ul>
+Both the authentication server and socket server are available as one Ruby application that you can clone from
+<a href='https://github.com/easychat/server' target='_blank'>GitHub.</a>
+<hr>
+<p>
+Source code available on
+<a href='https://github.com/easychat' target='_blank'>GitHub.</a>
+</p>
+<p>
+Need help? Join the
+<a href='https://standardnotes.org/slack' target='_blank'>Slack</a>
+group.
+</p>
+<hr>
+<p>
+Brought to you by
+<a href='https://standardnotes.org' target='_blank'>Standard Notes.</a>
+</p>
+</div>
+</html>
