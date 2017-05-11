@@ -16,6 +16,11 @@ body, html {
     margin: 20px;
   }
 }
+.gif {
+  background-color: black;
+  padding: 20px;
+}
+
 a {
   color: #086dd6;
 }
